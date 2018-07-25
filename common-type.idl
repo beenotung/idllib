@@ -1,0 +1,21 @@
+
+  typedef string<256> transactionId;
+  // globally unique, transactionId + '-' + increment
+  typedef string id;
+  typedef unsigned long long time;
+  typedef sequence<octet> byteSeq;
+
+  // https://github.com/multiformats/multihash
+  typedef string multihash;
+
+  // https://github.com/multiformats/multibase
+  // from text to binary explicitly, then to data implicitly
+  typedef string multibase;
+
+  // https://github.com/multiformats/multiaddr
+  typedef string multiaddr;
+
+  // https://github.com/multiformats/multicodec
+  // from binary to data explicitly
+  typedef sequence<octet> multicodec;
+

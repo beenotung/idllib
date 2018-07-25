@@ -1,0 +1,31 @@
+= IDL lib
+
+A collection of commonly used IDL across multiple projects.
+
+== Usage
+
+Add this repo as git submodule, setup symbolic link to the project idl folder, then reference as if they are local files.
+
+When you need to change the files, turn the symbolic link into real copy, then modify locally.
+
+== Code Generation
+
+=== Generate Java Source Code
+
+The command `idlj` is bundled with JDK (as of OpenJDK 8).
+Run `man idlj` for more details.
+
+=== Generate Typescript Source Code
+
+The command `idl2ts` is published on npm.
+It takes relative path to the idl file and generate Typescript interface and abstract class.
+However, Object Broker is not implemented.
+
+There is a template / boilerplate on
+link:https://github.com/beenotung/spec-template.git[github]
+
+Server Side can be a RESTful nest.js node;
+Client Side can use this npm package to connect to the server
+https://github.com/beenotung/idl2ts-client.git[idl2ts-client]
+
+Examples exist and are under process to turn into open-sourced.
