@@ -1,4 +1,7 @@
+#ifndef _common_type_
+#define _common_type_
 #include "common-type.idl"
+#endif
 
   // in-line
   struct multilang {
